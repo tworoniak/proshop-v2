@@ -58,7 +58,7 @@ const productSchema = new mongoose.Schema(
       required: true,
       default: 0,
     },
-    rnumReviews: {
+    numReviews: {
       type: Number,
       required: true,
       default: 0,
@@ -68,7 +68,7 @@ const productSchema = new mongoose.Schema(
       required: true,
       default: 0,
     },
-    rcountInStock: {
+    countInStock: {
       type: Number,
       required: true,
       default: 0,
@@ -79,6 +79,6 @@ const productSchema = new mongoose.Schema(
   },
 );
 
-const Product = mongoose.model('PRoduct', productSchema);
+const Product = mongoose.model('Product', productSchema);
 
 export default Product;
